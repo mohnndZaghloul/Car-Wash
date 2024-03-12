@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { GiWaterRecycling } from "react-icons/gi";
-import { FaWhatsapp, FaVideo, FaPhone } from "react-icons/fa";
+import { FaWhatsapp, FaPhone } from "react-icons/fa";
 
 const Nav = () => {
   return (
