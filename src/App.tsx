@@ -2,111 +2,124 @@ import Nav from "./components/templets/Nav";
 import Img1 from "../src/assets/img1.jpg";
 import Img2 from "../src/assets/img2.jpg";
 import Img3 from "../src/assets/img3.jpg";
+import Img4 from "../src/assets/img5.jpg";
+import Img5 from "../src/assets/img6.jpg";
+import Img6 from "../src/assets/img7.jpg";
 import Imga1 from "../src/assets/imga1.jpg";
 import Imga2 from "../src/assets/imga2.jpg";
 import Imgb1 from "../src/assets/imgb1.jpg";
 import Imgb2 from "../src/assets/imgb2.jpg";
+import video1 from "../src/assets/video1.mp4";
 import video2 from "../src/assets/video2.mp4";
 import video4 from "../src/assets/video4.mp4";
 import video5 from "../src/assets/video5.mp4";
 import video6 from "../src/assets/video6.mp4";
+import video7 from "../src/assets/video7.mp4";
+import video8 from "../src/assets/video8.mp4";
+import video9 from "../src/assets/video9.mp4";
 import { HeroParallax } from "./components/ui/hero-parallax";
 import { motion } from "framer-motion";
+import { FaPhone, FaWhatsapp } from "react-icons/fa";
 
 function App() {
   const products = [
     {
-      title: "Moonbeam",
+      title: "image1",
       thumbnail: Img1,
     },
     {
-      title: "Cursor",
+      title: "image2",
       thumbnail: Img2,
     },
     {
-      title: "Rogue",
+      title: "image3",
       thumbnail: Img3,
     },
-
     {
-      title: "Editorially",
+      title: "image4",
+      thumbnail: Img4,
+    },
+    {
+      title: "image5",
+      thumbnail: Img6,
+    },
+    {
+      title: "image6",
+      thumbnail: Img5,
+    },
+    {
+      title: "image7",
       thumbnail: Imga1,
     },
     {
-      title: "Editrix AI",
+      title: "image8",
+      thumbnail: Imgb1,
+    },
+    {
+      title: "image8",
       thumbnail: Imga2,
     },
     {
-      title: "Pixel Perfect",
-      thumbnail: Imgb1,
-    },
-
-    {
-      title: "Algochurn",
-      thumbnail: Imgb2,
-    },
-    {
-      title: "Editorially",
-      thumbnail: Imga1,
-    },
-    {
-      title: "Editrix AI",
-      thumbnail: Imga2,
-    },
-    {
-      title: "Pixel Perfect",
-      thumbnail: Imgb1,
-    },
-
-    {
-      title: "Algochurn",
+      title: "image9",
       thumbnail: Imgb2,
     },
   ];
-
   return (
-    <main
-      dir="rtl"
-      className="w-full capitalize bg-gradient-to-br from-black to-dark text-secondary">
-      <div className="fixed h-full w-full capitalize bg-gradient-to-br from-black to-dark text-secondary" />
+    <main dir="rtl" className="capitalize text-secondary">
+      <div className="fixed top-0 left-0 h-full w-full capitalize -z-10 bg-gradient-to-br from-black to-dark text-secondary" />
       <Nav />
-      <section dir="ltr">
+      <section dir="ltr" className="overflow-hidden">
         <HeroParallax products={products} />
       </section>
-      <section>
-        <p className="text-lg relative text-center bg-primary bg-opacity-20 py-20 container">
-          غسيل السيارات بالبخار تنظيف كافة أجزاء السيارة من الداخل مثل الديكور
-          والمراتب والأرضيات والأسقف وإزالة كافة البقع الداخلية والخارجية وتلميع
-          الهيكل وتلميع خارجي كامل بجودة عالية. وتلميع الحافات والإطارات ومحرك
-          السيارة وصندوق السيارة من الداخل استمتع بتجربة التنظيف مع خدماتنا
-          المتميزة لغسيل السيارات
-        </p>
+      <section className="bg-primary bg-opacity-20 py-10 lg:py-16">
+        <div className="container">
+          <h1 className="text-4xl lg:text-6xl font-bold pb-4">من نحن ؟</h1>
+          <p className="text-lg relative leading-8">
+            شركة الإتقان لغسيل السيارات بالبخار تنظيف كافة أجزاء السيارة من
+            الداخل مثل الديكور والمراتب والأرضيات والأسقف وإزالة كافة البقع
+            الداخلية والخارجية وتلميع الهيكل وتلميع خارجي كامل بجودة عالية.
+            وتلميع الحافات والإطارات ومحرك السيارة وصندوق السيارة من الداخل
+            استمتع بتجربة التنظيف مع خدماتنا المتميزة لغسيل السيارات والمنزل!
+            استمتع برفاهية سيارة نظيفة ومساحة معيشة نظيفة حيث نقوم بغسل السيارة
+            وتطهيرها بعناية، مما يضمن بيئة منعشة وخالية من الجراثيم. عزز أسلوب
+            حياتك من خلال لمساتنا المتخصصة حيث تجتمع النظافة مع الراحة.
+          </p>
+        </div>
       </section>
-      <section className="relative container pb-10">
-        <div className="py-20 flex gap-4 justify-center items-center">
+      <section id="videos" className="container py-10">
+        <h3 className="text-center text-4xl">
+          اتصل بنا الان او تواصل معنا علي الوتس اب علي الرقم
+          <a
+            className="ps-1 hover:underline transition"
+            target="_blank"
+            href="https://wa.me/0551916679">
+             0551916679
+          </a>
+        </h3>
+        <div className="py-10 lg:py-20 grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-10 justify-center items-center">
           <motion.div
             whileInView={{ y: 80, transition: { duration: 0.8 } }}
-            className="w-1/5 rounded-2xl overflow-hidden">
+            className="w-full rounded-2xl overflow-hidden">
             <video controls muted>
-              <source src={video2} type="video/mp4" />
+              <source src={video8} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </motion.div>
-          <div className="w-1/5 rounded-2xl overflow-hidden">
+          <div className="w-full rounded-2xl overflow-hidden">
             <video controls muted>
-              <source src={video4} type="video/mp4" />
+              <source src={video2} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
           <motion.div
             whileInView={{ y: 80, transition: { duration: 0.8 } }}
-            className="w-1/5 rounded-2xl overflow-hidden">
+            className="w-full rounded-2xl overflow-hidden">
             <video controls muted>
               <source src={video5} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </motion.div>
-          <div className="w-1/5 rounded-2xl overflow-hidden">
+          <div className="w-full rounded-2xl overflow-hidden">
             <video controls muted>
               <source src={video6} type="video/mp4" />
               Your browser does not support the video tag.
@@ -114,14 +127,55 @@ function App() {
           </div>
           <motion.div
             whileInView={{ y: 80, transition: { duration: 0.8 } }}
-            className="w-1/5 rounded-2xl overflow-hidden">
+            className="w-full rounded-2xl overflow-hidden">
             <video controls muted>
-              <source src={video5} type="video/mp4" />
+              <source src={video7} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </motion.div>
+          <div className="w-full rounded-2xl overflow-hidden">
+            <video controls muted>
+              <source src={video9} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <motion.div
+            whileInView={{ y: 80, transition: { duration: 0.8 } }}
+            className="w-full rounded-2xl overflow-hidden">
+            <video controls muted>
+              <source src={video1} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </motion.div>
+          <div className="w-full rounded-2xl overflow-hidden">
+            <video controls muted>
+              <source src={video4} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
       </section>
+      <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1, transition: { duration: 0.8 } }}
+        className="fixed bottom-10 left-10">
+        <div className="bg-black rounded-full p-6 mb-4">
+          <a target="_blank" href="tel:0551916679">
+            <FaPhone
+              className="animate-pulse hover:scale-110 transition duration-300 cursor-pointer"
+              size={32}
+            />
+          </a>
+        </div>
+        <div className="bg-black rounded-full p-6">
+          <a target="_blank" href="https://wa.me/0551916679">
+            <FaWhatsapp
+              className="animate-pulse hover:scale-110 transition duration-300 cursor-pointer"
+              size={32}
+            />
+          </a>
+        </div>
+      </motion.div>
     </main>
   );
 }

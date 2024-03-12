@@ -53,7 +53,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[370vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
+      className="h-[180vh] md:h-[260vh] lg:h-[310vh] py-40 antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
       <Header />
       <motion.div
         style={{
@@ -63,7 +63,7 @@ export const HeroParallax = ({
           opacity,
         }}
         className="">
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+        <motion.div className="flex w-full flex-row-reverse space-x-reverse space-x-10 mb-10">
           {firstRow.map((product) => (
             <ProductCard
               product={product}
@@ -72,7 +72,7 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row  mb-20 space-x-20 ">
+        <motion.div className="flex w-full flex-row  mb-10 space-x-10 ">
           {secondRow.map((product) => (
             <ProductCard
               product={product}
@@ -81,7 +81,7 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+        <motion.div className="flex w-full flex-row-reverse space-x-reverse space-x-10">
           {thirdRow.map((product) => (
             <ProductCard
               product={product}
@@ -100,9 +100,9 @@ export const Header = () => {
     <div
       dir="rtl"
       className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
-      <h1 className="text-6xl font-bold pb-2">شركة الإتقان</h1>
-      <h1 className="text-6xl font-bold">اجعل سيارتك لامعة</h1>
-      <h2 className="text-2xl pt-2 pb-4">
+      <h1 className="text-4xl lg:text-6xl font-bold pb-2">شركة الإتقان</h1>
+      <h1 className="text-4xl lg:text-6xl font-bold">اجعل سيارتك لامعة</h1>
+      <h2 className="text-xl lg:text-2xl pt-2 pb-4">
         مغسلة سيارات متميزة تقدم خدمات تنظيف بأسعار منافسة
       </h2>
       <p>احجز موعدك الآن واستمتع بسيارة نظيفة ولامعة</p>
@@ -129,7 +129,7 @@ export const ProductCard = ({
         y: -20,
       }}
       key={product.title}
-      className="group/product h-[40rem] w-[30rem] relative flex-shrink-0">
+      className="group/product h-[16rem] lg:h-[28rem] w-[12rem] lg:w-[21rem] relative flex-shrink-0">
       <img
         src={product.thumbnail}
         className="object-cover object-left-top absolute h-full w-full inset-0"
