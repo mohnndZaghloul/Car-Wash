@@ -155,27 +155,29 @@ function App() {
           </div>
         </div>
       </section>
-      <motion.div
-        initial={{ x: -100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1, transition: { duration: 0.8 } }}
-        className="fixed bottom-10 left-10">
-        <div className="bg-black rounded-full p-6 mb-4">
-          <a target="_blank" href="tel:0551916679">
-            <FaPhone
-              className="animate-pulse hover:scale-110 transition duration-300 cursor-pointer"
-              size={32}
-            />
-          </a>
-        </div>
-        <div className="bg-black rounded-full p-6">
-          <a target="_blank" href="https://wa.me/0551916679">
-            <FaWhatsapp
-              className="animate-pulse hover:scale-110 transition duration-300 cursor-pointer"
-              size={32}
-            />
-          </a>
-        </div>
-      </motion.div>
+      <footer>
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1, transition: { duration: 0.8 } }}
+          className="fixed bottom-10 left-10">
+          <div className="bg-black rounded-full p-6 mb-4">
+            <a target="_blank" href="tel:0551916679">
+              <FaPhone
+                className="animate-pulse hover:scale-110 transition duration-300 cursor-pointer"
+                size={32}
+              />
+            </a>
+          </div>
+          <div className="bg-black rounded-full p-6">
+            <a target="_blank" href="https://wa.me/0551916679">
+              <FaWhatsapp
+                className="animate-pulse hover:scale-110 transition duration-300 cursor-pointer"
+                size={32}
+              />
+            </a>
+          </div>
+        </motion.div>
+      </footer>
     </main>
   );
 }
