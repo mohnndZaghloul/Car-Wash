@@ -87,15 +87,16 @@ function App() {
         </div>
       </section>
       <section id="videos" className="container py-10">
-        <h3 className="text-center text-4xl">
-          اتصل بنا الان او تواصل معنا علي الوتس اب علي الرقم
+        <div className="flex items-center justify-center text-4xl">
+          <p>اتصل بنا الان او تواصل معنا علي الوتس اب علي الرقم</p>
           <a
+            aria-label="WhatsApp - Send message via WhatsApp"
             className="ps-1 hover:underline transition"
             target="_blank"
             href="https://wa.me/0551916679">
              0551916679
           </a>
-        </h3>
+        </div>
         <div className="py-10 lg:py-20 grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-10 justify-center items-center">
           <motion.div
             whileInView={{ y: 80, transition: { duration: 0.8 } }}
@@ -161,7 +162,10 @@ function App() {
           whileInView={{ x: 0, opacity: 1, transition: { duration: 0.8 } }}
           className="fixed bottom-10 left-10">
           <div className="bg-black rounded-full p-6 mb-4">
-            <a target="_blank" href="tel:0551916679">
+            <a
+              aria-label="Phone Number - Call"
+              target="_blank"
+              href="tel:0551916679">
               <FaPhone
                 className="animate-pulse hover:scale-110 transition duration-300 cursor-pointer"
                 size={32}
@@ -169,7 +173,10 @@ function App() {
             </a>
           </div>
           <div className="bg-black rounded-full p-6">
-            <a target="_blank" href="https://wa.me/0551916679">
+            <a
+              aria-label="WhatsApp - Send message via WhatsApp"
+              target="_blank"
+              href="https://wa.me/0551916679">
               <FaWhatsapp
                 className="animate-pulse hover:scale-110 transition duration-300 cursor-pointer"
                 size={32}

@@ -6,14 +6,20 @@ const Nav = () => {
   return (
     <header className="absolute z-50 top-0 w-full">
       <nav className="container relative w-full py-5 flex justify-center items-center gap-8">
-        <a target="_blank" href="tel:0551916679">
+        <a
+          aria-label="Phone Number - Call"
+          target="_blank"
+          href="tel:0551916679">
           <FaPhone
             className="animate-pulse hover:scale-110 transition duration-300 cursor-pointer"
             size={32}
           />
         </a>
         <GiWaterRecycling size={40} />
-        <a target="_blank" href="https://wa.me/0551916679">
+        <a
+          aria-label="WhatsApp - Send message via WhatsApp"
+          target="_blank"
+          href="https://wa.me/0551916679">
           <FaWhatsapp
             className="animate-pulse hover:scale-110 transition duration-300 cursor-pointer"
             size={32}
