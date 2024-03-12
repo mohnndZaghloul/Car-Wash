@@ -87,7 +87,7 @@ function App() {
         </div>
       </section>
       <section id="videos" className="container py-10">
-        <div className="flex items-center justify-center text-4xl">
+        <div className="flex items-center justify-center flex-col lg:flex-row text-center gap-y-4 text-2xl lg:text-4xl">
           <p>اتصل بنا الان او تواصل معنا علي الوتس اب علي الرقم</p>
           <a
             aria-label="WhatsApp - Send message via WhatsApp"
