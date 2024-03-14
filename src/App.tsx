@@ -9,7 +9,6 @@ import Imga1 from "../src/assets/imga1.jpg";
 import Imga2 from "../src/assets/imga2.jpg";
 import Imgb1 from "../src/assets/imgb1.jpg";
 import Imgb2 from "../src/assets/imgb2.jpg";
-import video1 from "../src/assets/video1.mp4";
 import video2 from "../src/assets/video2.mp4";
 import video4 from "../src/assets/video4.mp4";
 import video5 from "../src/assets/video5.mp4";
@@ -17,6 +16,7 @@ import video6 from "../src/assets/video6.mp4";
 import video7 from "../src/assets/video7.mp4";
 import video8 from "../src/assets/video8.mp4";
 import video9 from "../src/assets/video9.mp4";
+import video10 from "../src/assets/video10.mp4";
 import { HeroParallax } from "./components/ui/hero-parallax";
 import { motion } from "framer-motion";
 import { FaPhone, FaWhatsapp } from "react-icons/fa";
@@ -101,13 +101,13 @@ function App() {
           <motion.div
             whileInView={{ y: 80, transition: { duration: 0.8 } }}
             className="w-full rounded-2xl overflow-hidden">
-            <video controls muted>
+            <video controls loop autoPlay muted>
               <source src={video8} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </motion.div>
           <div className="w-full rounded-2xl overflow-hidden">
-            <video controls muted>
+            <video controls loop autoPlay muted>
               <source src={video2} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -115,13 +115,13 @@ function App() {
           <motion.div
             whileInView={{ y: 80, transition: { duration: 0.8 } }}
             className="w-full rounded-2xl overflow-hidden">
-            <video controls muted>
+            <video controls loop autoPlay muted>
               <source src={video5} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </motion.div>
           <div className="w-full rounded-2xl overflow-hidden">
-            <video controls muted>
+            <video controls loop autoPlay muted>
               <source src={video6} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -129,27 +129,28 @@ function App() {
           <motion.div
             whileInView={{ y: 80, transition: { duration: 0.8 } }}
             className="w-full rounded-2xl overflow-hidden">
-            <video controls muted>
+            <video controls loop autoPlay muted>
               <source src={video7} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </motion.div>
           <div className="w-full rounded-2xl overflow-hidden">
-            <video controls muted>
+            <video controls loop autoPlay muted>
               <source src={video9} type="video/mp4" />
+              <source src={video9} type="video/ogg" />
               Your browser does not support the video tag.
             </video>
           </div>
           <motion.div
             whileInView={{ y: 80, transition: { duration: 0.8 } }}
             className="w-full rounded-2xl overflow-hidden">
-            <video controls muted>
-              <source src={video1} type="video/mp4" />
+            <video controls loop autoPlay muted>
+              <source src={video10} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </motion.div>
           <div className="w-full rounded-2xl overflow-hidden">
-            <video controls muted>
+            <video controls loop autoPlay muted>
               <source src={video4} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
