@@ -101,8 +101,8 @@ function App() {
             aria-label="WhatsApp - Send message via WhatsApp"
             className="ps-1 hover:underline transition"
             target="_blank"
-            href="tel:+966551226023">
-            551226023
+            href="tel:+966551916679">
+            551916679
           </a>
         </div>
         <div className="flex items-center justify-center flex-col lg:flex-row text-center gap-y-4 text-2xl lg:text-4xl pt-4">
@@ -111,8 +111,8 @@ function App() {
             aria-label="WhatsApp - Send message via WhatsApp"
             className="ps-1 hover:underline transition"
             target="_blank"
-            href="https://wa.me/+966551916679">
-             551916679
+            href="https://wa.me/+966551226023">
+            551226023
           </a>
         </div>
         <div className="py-10 lg:py-20 grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-10 justify-center items-center">
@@ -187,7 +187,7 @@ function App() {
             <a
               aria-label="Phone Number - Call"
               target="_blank"
-              href="tel:+966551226023">
+              href="tel:+966551916679">
               <FaPhone
                 className="animate-pulse hover:scale-110 transition duration-300 cursor-pointer"
                 size={32}
@@ -198,7 +198,7 @@ function App() {
             <a
               aria-label="WhatsApp - Send message via WhatsApp"
               target="_blank"
-              href="https://wa.me/+966551916679">
+              href="https://wa.me/+966551226023">
               <FaWhatsapp
                 className="animate-pulse hover:scale-110 transition duration-300 cursor-pointer"
                 size={32}

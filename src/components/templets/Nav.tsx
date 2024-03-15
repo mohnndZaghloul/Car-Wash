@@ -9,7 +9,7 @@ const Nav = () => {
         <a
           aria-label="Phone Number - Call"
           target="_blank"
-          href="tel:+966551226023">
+          href="tel:+966551916679">
           <FaPhone
             className="animate-pulse hover:scale-110 transition duration-300 cursor-pointer"
             size={32}
@@ -19,7 +19,7 @@ const Nav = () => {
         <a
           aria-label="WhatsApp - Send message via WhatsApp"
           target="_blank"
-          href="https://wa.me/+966551916679">
+          href="https://wa.me/+966551226023">
           <FaWhatsapp
             className="animate-pulse hover:scale-110 transition duration-300 cursor-pointer"
             size={32}
