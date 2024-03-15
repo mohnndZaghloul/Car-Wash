@@ -75,26 +75,44 @@ function App() {
         <div className="container">
           <h1 className="text-4xl lg:text-6xl font-bold pb-4">من نحن ؟</h1>
           <p className="text-lg relative leading-8">
-            شركة الإتقان لغسيل السيارات بالبخار تنظيف كافة أجزاء السيارة من
-            الداخل مثل الديكور والمراتب والأرضيات والأسقف وإزالة كافة البقع
-            الداخلية والخارجية وتلميع الهيكل وتلميع خارجي كامل بجودة عالية.
-            وتلميع الحافات والإطارات ومحرك السيارة وصندوق السيارة من الداخل
-            استمتع بتجربة التنظيف مع خدماتنا المتميزة لغسيل السيارات والمنزل!
-            استمتع برفاهية سيارة نظيفة ومساحة معيشة نظيفة حيث نقوم بغسل السيارة
-            وتطهيرها بعناية، مما يضمن بيئة منعشة وخالية من الجراثيم. عزز أسلوب
-            حياتك من خلال لمساتنا المتخصصة حيث تجتمع النظافة مع الراحة.
+            شركة الاتقان
+            <ul>
+              <li>
+                :- غسيل وتعقيم وتعطير المجالس والسجاد والكنب والستاير بمواد 3M
+                خدمة فوق الممتاز 24 ساعة
+              </li>
+              <li> :-تنظيف وتعقيم وتعطير المساجد كامل</li>
+              <li>
+                :- غسيل السيارات ب البخار تنظيف جميع أجزاء السيارة من الداخل مثل
+                الديكور والمراتب والارضيات والسقف وأزالة جميع البقع من الداخل
+                والخارج وتلميع البودى وتلميع خارجى كامل عالى الجوده وتلميع
+                الجنوط والكفارات وموتور السيارة والشنطه من الداخل كل هذا ب
+                استخدام مواد تنظيف وتلميع مستوردة ومياه مفلترة محافظه كامله على
+                اجزاء السيارة و الاهتمام بها
+              </li>
+            </ul>
           </p>
         </div>
       </section>
       <section id="videos" className="container py-10">
         <div className="flex items-center justify-center flex-col lg:flex-row text-center gap-y-4 text-2xl lg:text-4xl">
-          <p>اتصل بنا الان او تواصل معنا علي الوتس اب علي الرقم</p>
+          <p>اتصل بنا الان جوال علي الرقم</p>
           <a
             aria-label="WhatsApp - Send message via WhatsApp"
             className="ps-1 hover:underline transition"
             target="_blank"
-            href="https://wa.me/0551916679">
-             0551916679
+            href="tel:+966551226023">
+            551226023
+          </a>
+        </div>
+        <div className="flex items-center justify-center flex-col lg:flex-row text-center gap-y-4 text-2xl lg:text-4xl pt-4">
+          <p>تواصل معنا علي الوتس اب علي الرقم</p>
+          <a
+            aria-label="WhatsApp - Send message via WhatsApp"
+            className="ps-1 hover:underline transition"
+            target="_blank"
+            href="https://wa.me/+966551916679">
+             551916679
           </a>
         </div>
         <div className="py-10 lg:py-20 grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-10 justify-center items-center">
@@ -138,6 +156,7 @@ function App() {
             <video controls loop autoPlay muted>
               <source src={video9} type="video/mp4" />
               <source src={video9} type="video/ogg" />
+              <source src={video9} type="video/webm" />
               Your browser does not support the video tag.
             </video>
           </div>
@@ -152,6 +171,8 @@ function App() {
           <div className="w-full rounded-2xl overflow-hidden">
             <video controls loop autoPlay muted>
               <source src={video4} type="video/mp4" />
+              <source src={video4} type="video/ogg" />
+              <source src={video4} type="video/webm" />
               Your browser does not support the video tag.
             </video>
           </div>
@@ -166,7 +187,7 @@ function App() {
             <a
               aria-label="Phone Number - Call"
               target="_blank"
-              href="tel:0551916679">
+              href="tel:+966551226023">
               <FaPhone
                 className="animate-pulse hover:scale-110 transition duration-300 cursor-pointer"
                 size={32}
@@ -177,7 +198,7 @@ function App() {
             <a
               aria-label="WhatsApp - Send message via WhatsApp"
               target="_blank"
-              href="https://wa.me/0551916679">
+              href="https://wa.me/+966551916679">
               <FaWhatsapp
                 className="animate-pulse hover:scale-110 transition duration-300 cursor-pointer"
                 size={32}
